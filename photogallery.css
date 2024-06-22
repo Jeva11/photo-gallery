@@ -1,5 +1,6 @@
 html {
     background: #000000;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 header {
@@ -8,13 +9,46 @@ header {
   height: 95px;
 }
 
+#branding {
+    background: #FFFFFF; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    width: 97%;
+}
+
+#branding h1 {
+    font-size: 40px;
+    color: #007D7B;
+    text-transform: uppercase;
+    margin: 0;
+ 
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
 
 #about {
-    width: 420px;
-    float: left;
-    position: relative;
-    text-align: left;
-    margin: 10px;
+    background: #FFFFFF; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    width: 100%;
+}
+
+#about h2 {
+    font-size: 40px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+#about p {
+    font-size: 20px;
+    text-align: left; 
+    color: #000000
 }
 
 body {
@@ -24,24 +58,16 @@ body {
     color: #FFFFFF; 
 }
 
-h1 {
-    font-size: 40px;
-    color: #007D7B;
-    text-transform: uppercase;
-    float: left;
-    width: 400px;
-    position: absolute;
-    margin: 25px 0px;
-}
-
 h2 {
     font-size: 40px;
-    color: #FFFFFF;
+    color: #000000;
     text-transform: uppercase;
 }
 
-p {
+#gallery p {
+    margin-left: 15px;
     font-size: 20px;
+    color: #000000
 }
 
 nav {
@@ -91,17 +117,6 @@ main {
     clear: both;
 }
 
-.box {
-    background: #FFFFFF;
-    color: #000000;
-    height: auto;
-}
-
-.box h2, .box p {
-    color: #000000;
-    margin: 5px 0px 0px 5px;
-}
-
 img[src*="TK"] {
     width: 850px;
     float: left;
@@ -109,18 +124,10 @@ img[src*="TK"] {
     margin: 10px;
 }
 
-#about {
-    width: 420px;
-    float: right;
-    position: relative;
-    text-align: right;
-    margin: 10px;
-}
-
 #gallery {
     clear: both;
     position: relative;
-    margin: 10px;
+    background-color: #FFFFFF;
 }
 
 div .container {
@@ -148,9 +155,24 @@ img {
     height: 630px;
 }
 
+.blackText, .whiteText {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 .blackText {
     text-transform: uppercase;
-    color: #000000;
+    color: #000000; 
+}
+
+.centerMiddle {
+    position: absolute;
+    bottom: 3px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 16px;
 }
 
 .whiteText {
@@ -158,24 +180,11 @@ img {
     color: #FFFFFF;
 }
 
-.topLeft {
+.middleTop {
     position: absolute;
-    top: 3px;
-    left: 6px;
-    font-size: 16px;
-}
-
-.bottomRight {
-    position: absolute;
-    bottom: 3px;
-    right: 6px;
-    font-size: 16px;
-}
-
-.bottomLeft {
-    position: absolute;
-    bottom: 3px;
-    left: 6px;
+    top: 3px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     font-size: 16px;
 }
 
@@ -197,7 +206,6 @@ img {
 
 #contact label, [placeholder] {
     font-size: 16px;
-    text-transform: uppercase;
 }
 
 #contact input {
@@ -230,4 +238,160 @@ button:active {
 
 footer {
     text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+    header {
+        max-width: 880px;
+        text-align: center;
+        width: 100%;
+    }
+
+    body {
+        max-width: 880px; /* Set a maximum width for the body */
+        width: 80%;
+        margin: 0 auto; /* Center the body content */
+    }
+
+    nav {
+        width: 100%; /* Ensure nav takes full width */
+        text-align: center; /* Center align the navigation links */
+        background-color: #000000; /* Black background color */
+        box-sizing: border-box; 
+        margin-bottom: -5px;/* Include padding in width calculation */
+    }
+
+    #gallery h2 {
+        text-align: center; /* Center align the "Gallery" heading */
+        margin-bottom: 20px;
+        margin-top: 1px; /* Add spacing below the heading */
+    }
+
+    /* Ensure #gallery takes full width */
+    #gallery {
+        width: 100%;
+    }
+
+    /* Two-column layout for .container */
+    div .container {
+        width: 49%; /* Two columns (adjust width as needed) */
+        box-sizing: border-box; /* Include padding and border in the width */
+        padding: 5px; /* Add padding around each image */
+        margin-bottom: 10px; /* Space between each container */
+        display: inline-block; /* Ensure containers can sit next to each other */
+        vertical-align: top; /* Align containers to the top */
+    }
+   
+    .container:nth-child(even) {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    img {
+        width: 100%; /* Ensure images fill their container */
+        display: block; /* Remove any default inline spacing */
+    }
+
+    #contact {
+        max-width: 100%; /* Full width within the body */
+        text-align: center; /* Center align content */
+        margin: 0 auto; /* Center the contact section */
+        padding: 20px; /* Add padding around the contact form */
+    }
+
+    #contact form {
+        width: 100%; /* Ensure form fills its container */
+        max-width: 600px; /* Limit form width for readability */
+        margin: 0 auto; /* Center the form */
+    }
+
+    #contact label,
+    #contact input,
+    #contact button {
+        display: block; /* Ensure form elements stack vertically */
+        width: 100%; /* Full width for form elements */
+        margin-bottom: 10px; /* Space between form elements */
+    }
+}
+
+@media screen and (max-width: 485px) {
+
+    header {
+        max-width: 485px;
+        text-align: center;
+        width: 91%;
+    }
+
+    #branding h1 {
+        margin-right: 5px; /* Adjust the right margin */
+        margin-left: -12px;
+    }
+
+    nav {
+        max-width: 485px;
+        width: 100%;
+        text-align: center;
+        background-color: #000000;
+        box-sizing: border-box;
+        overflow: auto; 
+        padding: 20px;
+        margin-right: -18px;
+        margin-left: 30px;/* Ensure horizontal scroll if needed */
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 10px;
+        display: flex; /* Use flexbox to align items */
+        justify-content: center; /* Center align navigation items */
+    }
+
+    nav li {
+        margin: 0 10px;
+        font-weight: bold; /* Adjust margin between navigation items */
+    }
+
+    nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+
+    body {
+        max-width: 485px;
+        width: 90%;
+
+    }
+
+    #about h2{
+        margin-top: -5px;
+    }
+
+    div .container {
+        width: 100%
+    }
+
+    #contact {
+        max-width: 90%; /* Full width within the body */
+        text-align: center; /* Center align content */
+        margin: 0 auto; /* Center the contact section */
+        padding: 20px; /* Add padding around the contact form */
+    }
+
+    #contact form {
+        width: 100%; /* Ensure form fills its container */
+        max-width: 600px; /* Limit form width for readability */
+        margin: 0 auto; /* Center the form */
+    }
+
+    #contact label,
+    #contact input,
+    #contact button {
+        display: block; /* Ensure form elements stack vertically */
+        width: 100%; /* Full width for form elements */
+        margin-bottom: 10px; /* Space between form elements */
+    }
+
 }

@@ -248,38 +248,36 @@ footer {
     }
 
     body {
-        max-width: 880px; /* Set a maximum width for the body */
+        max-width: 880px; 
         width: 80%;
-        margin: 0 auto; /* Center the body content */
+        margin: 0 auto; 
     }
 
     nav {
-        width: 100%; /* Ensure nav takes full width */
-        text-align: center; /* Center align the navigation links */
-        background-color: #000000; /* Black background color */
+        width: 100%; 
+        text-align: center; 
+        background-color: #000000; 
         box-sizing: border-box; 
-        margin-bottom: -5px;/* Include padding in width calculation */
+        margin-bottom: -5px;
     }
 
     #gallery h2 {
-        text-align: center; /* Center align the "Gallery" heading */
+        text-align: center; 
         margin-bottom: 20px;
-        margin-top: 1px; /* Add spacing below the heading */
+        margin-top: 1px; 
     }
 
-    /* Ensure #gallery takes full width */
     #gallery {
         width: 100%;
     }
 
-    /* Two-column layout for .container */
     div .container {
-        width: 49%; /* Two columns (adjust width as needed) */
-        box-sizing: border-box; /* Include padding and border in the width */
-        padding: 5px; /* Add padding around each image */
-        margin-bottom: 10px; /* Space between each container */
-        display: inline-block; /* Ensure containers can sit next to each other */
-        vertical-align: top; /* Align containers to the top */
+        width: 49%; 
+        box-sizing: border-box; 
+        padding: 5px; 
+        margin-bottom: 10px; 
+        display: inline-block; 
+        vertical-align: top; 
     }
    
     .container:nth-child(even) {
@@ -288,29 +286,29 @@ footer {
     }
 
     img {
-        width: 100%; /* Ensure images fill their container */
-        display: block; /* Remove any default inline spacing */
+        width: 100%; 
+        display: block; 
     }
 
     #contact {
-        max-width: 100%; /* Full width within the body */
-        text-align: center; /* Center align content */
-        margin: 0 auto; /* Center the contact section */
-        padding: 20px; /* Add padding around the contact form */
+        max-width: 100%; 
+        text-align: center; 
+        margin: 0 auto; 
+        padding: 20px; 
     }
 
     #contact form {
-        width: 100%; /* Ensure form fills its container */
-        max-width: 600px; /* Limit form width for readability */
-        margin: 0 auto; /* Center the form */
+        width: 100%; 
+        max-width: 600px; 
+        margin: 0 auto; 
     }
 
     #contact label,
     #contact input,
     #contact button {
-        display: block; /* Ensure form elements stack vertically */
-        width: 100%; /* Full width for form elements */
-        margin-bottom: 10px; /* Space between form elements */
+        display: block; 
+        width: 100%; 
+        margin-bottom: 10px; 
     }
 }
 
@@ -323,7 +321,7 @@ footer {
     }
 
     #branding h1 {
-        margin-right: 5px; /* Adjust the right margin */
+        margin-right: 5px; 
         margin-left: -12px;
     }
 
@@ -336,20 +334,20 @@ footer {
         overflow: auto; 
         padding: 20px;
         margin-right: -18px;
-        margin-left: 30px;/* Ensure horizontal scroll if needed */
+        margin-left: 30px;
     }
 
     nav ul {
         list-style-type: none;
         padding: 10px;
         margin-left: 10px;
-        display: flex; /* Use flexbox to align items */
-        justify-content: center; /* Center align navigation items */
+        display: flex; 
+        justify-content: center; 
     }
 
     nav li {
         margin: 0 10px;
-        font-weight: bold; /* Adjust margin between navigation items */
+        font-weight: bold; 
     }
 
     nav a {
@@ -374,24 +372,24 @@ footer {
     }
 
     #contact {
-        max-width: 90%; /* Full width within the body */
-        text-align: center; /* Center align content */
-        margin: 0 auto; /* Center the contact section */
-        padding: 20px; /* Add padding around the contact form */
+        max-width: 90%; 
+        text-align: center; 
+        margin: 0 auto; 
+        padding: 20px; 
     }
 
     #contact form {
-        width: 100%; /* Ensure form fills its container */
-        max-width: 600px; /* Limit form width for readability */
-        margin: 0 auto; /* Center the form */
+        width: 100%; 
+        max-width: 600px; 
+        margin: 0 auto; 
     }
 
     #contact label,
     #contact input,
     #contact button {
-        display: block; /* Ensure form elements stack vertically */
-        width: 100%; /* Full width for form elements */
-        margin-bottom: 10px; /* Space between form elements */
+        display: block; 
+        width: 100%; 
+        margin-bottom: 10px; 
     }
 
 }
